@@ -1,0 +1,26 @@
+<h1>suma</h1>
+<form action="/suma" method="post">
+  <label>Numero 1 </label>
+  <input type="text" value="{{txtNumero1}}"
+  placeholder="numero1"
+  name="txtNumero1" />
+  <br/>
+  <label>numero 2 </label>
+  <input type="text" value="{{txtNumero2}}"
+  placeholder="numero2"
+  name="txtNumero2" />
+  <br/>
+  <button type="submit" value="sumar"
+  name="btnEnviar">sumar</button>
+  <button type="reset" value="cancelar"
+  name="btnCancelar">Cancelar</button>
+</form>
+<div>
+  <ul>
+    {{#each lugar}}
+    <li>
+      {{Numero1}} | {{Numero2}}
+    </li>
+    {{/each}}
+  </ul>
+</div>
